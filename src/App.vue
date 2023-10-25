@@ -1,52 +1,20 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import PocketBase from "pocketbase";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+import Map from "./components/MapOsm.vue";
 
 </script>
 
 <template>
-  <header class="bg-black">
-    <div class="text-sky-400">TESSST</div>
-      <div class="justify-center">
-            <img src="/public/img/logo.svg" alt="Logo de votre site">
-        </div>
-        <nav>
-        <RouterLink to="/">Connexion</RouterLink>
-        </nav>
-   
-  </header>
+  <Header/>
+    <RouterView />
+    <!-- <Map/> -->
+  <Footer/>
+  
 
-   <div>
-    <router-link to="/" class="bg-indigo-500">Go to Home</router-link>
-    <img
-      alt="Logo"
-      class="logo"
-      src="./assets/logo.svg"
-      width="125"
-      height="125"
-    />
-    <div class="wrapper" id="signOut">
-      <div><SignIn msg="User, please sign in !" /></div>
-      <label>email: </label><br />
-      <input
-        type="email"
-        required
-        id="email"
-        placeholder="username@domain.tld"
-      /><br />
-      <label>password: </label><br />
-      <input type="password" required id="passwd" /><br />
-      <button v-on:click="login()">Sign In Google</button>
-      <button v-on:click="github()">Sign In with Github</button>
-      <button v-on:click="logout()">Log Out</button>
-      <button v-on:click="add()">Add</button>
-      <p><label id="status"> You are not yet connected </label><br /></p>
-    </div>
-  </div>
-
-  <RouterView />
 </template>
-
 
 <script>
 var connected = false;
@@ -92,3 +60,6 @@ export default {
   },
 };
 </script>
+
+
+
