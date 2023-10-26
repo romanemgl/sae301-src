@@ -17,7 +17,7 @@ import Map from "./components/MapOsm.vue";
 </template>
 
 <script>
-var connected = false;
+/*var connected = false;
 var pocketbase_ip = "";
 if (import.meta.env.MODE === "production")
   pocketbase_ip = "https://www.tavu.romane-miguel.fr:443";
@@ -54,9 +54,9 @@ export default {
         email:currentUser.email
       });
     },*/
-    //this method allows the already registred user to log in the system.
-  },
-};
+    //this method allows the already registred user to log in the system.*/
+ // },
+//};
 </script>
 
 

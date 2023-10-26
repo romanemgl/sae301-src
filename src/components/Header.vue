@@ -22,7 +22,6 @@ export default {
                 connected = true;
                 currentUser = pb.authStore.model;
                 document.getElementById("signOut").style.visibility = "hidden";
-                document.getElementById("addPoem").style.visibility = "visible";
             }
         },
         async register() {
