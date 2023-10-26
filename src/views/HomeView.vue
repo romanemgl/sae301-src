@@ -9,7 +9,7 @@ import Map from "../components/MapOsm.vue";
     <h1 class="bg-vert font-2 text-center pt-2 mb-0">
       Jusqu’à -30% sur les montures blanches jusqu’au 31 novembre !
     </h1>
-    <img src="public/img/image_accueil.svg" alt="Image accueil" class="container-fluid full-width-header no-margin">
+    <img src="/public/img/image_accueil.svg" alt="Image accueil" class="container-fluid full-width-header no-margin">
 
   <div class="bg-beige">
       <div>
@@ -25,8 +25,8 @@ import Map from "../components/MapOsm.vue";
       <h3 class="text-center font-1 mt-5 mb-5">Personnalisation</h3>
 
         <div class="d-flex justify-content-center align-items-center">
-          <img src="public/img/card_1.png" alt="Card 1 Accueil" class="mr-5">
-          <img src="public/img/card_2.png" alt="Card 2 Accueil" class="">
+          <img src="/public/img/card_1.png" alt="Card 1 Accueil" class="mr-5">
+          <img src="/public/img/card_2.png" alt="Card 2 Accueil" class="">
         </div>
       
 

@@ -26,8 +26,6 @@ const pb = new PocketBase(pocketbase_ip);
 var currentUser;
 export default {
   methods: {
-    //this method allows a new user to sign up the system. Once done, the user receives an email
-    //asking for account validation. Once the validation made the user is added to the system
     async logout() {
       await pb.authStore.clear();
       document.getElementById("status").innerHTML = "You are now logged out";
