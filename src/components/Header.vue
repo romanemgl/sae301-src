@@ -3,7 +3,7 @@ import PocketBase from 'pocketbase'
 var connected = false;
 var pocketbase_ip = "";
 if (import.meta.env.MODE === "production")
-    pocketbase_ip = "https://tavu.romane-miguel.fr:443";
+    pocketbase_ip = "https://www.tavu.romane-miguel.fr:443";
 else pocketbase_ip = "http://127.0.0.1:8090";
 const pb = new PocketBase(pocketbase_ip);
 var currentUser;
